@@ -14,7 +14,14 @@ A [gh-dash](https://github.com/dlvhdr/gh-dash) theme built around the **Version 
 
 ## Installation
 
-Replace the `theme:` block in `~/.config/gh-dash/config.yml` with the contents of the variant file you want. `gh-dash`'s theme schema covers `text.primary/secondary/inverted/faint/warning/success/actor`, `background.selected`, `border.primary/secondary/faint`, and `icon.newcontributor/contributor/collaborator/member/owner/unknownrole` — every file here fills in all of them.
+1. Get the variant file you want — download it directly:
+   ```sh
+   curl -o /tmp/version14-theme.yml \
+     https://raw.githubusercontent.com/version14/gh-dash-theme/main/version14.yml
+   ```
+   or clone the repo (`git clone https://github.com/version14/gh-dash-theme`) to grab all three.
+2. Replace the `theme:` block in `~/.config/gh-dash/config.yml` with the contents of that file. `gh-dash`'s theme schema covers `text.primary/secondary/inverted/faint/warning/success/actor`, `background.selected`, `border.primary/secondary/faint`, and `icon.newcontributor/contributor/collaborator/member/owner/unknownrole` — every file here fills in all of them.
+3. Run `gh dash` to apply. If `config.yml` has a YAML syntax error (e.g. mismatched indentation after pasting), `gh dash` will fail to start and print a parse error rather than silently ignoring the bad section — that's your signal to check indentation against the variant file.
 
 ## Color Roles
 
