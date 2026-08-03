@@ -1,6 +1,6 @@
 # Version 14 Theme for gh-dash
 
-A [gh-dash](https://github.com/dlvhdr/gh-dash) theme built around the **Version 14** brand palette — the same palette used across the [Zed](https://github.com/version14/zed-theme), [VS Code](https://github.com/version14/vscode-theme), [Neovim/Vim](https://github.com/version14/nvim-theme), [Ghostty](https://github.com/version14/ghostty-theme), and [Starship](https://github.com/version14/starship-theme) ports.
+A [gh-dash](https://github.com/dlvhdr/gh-dash) theme built around the Version 14 brand palette, the same palette used across the [Zed](https://github.com/version14/zed-theme), [VS Code](https://github.com/version14/vscode-theme), [Neovim/Vim](https://github.com/version14/nvim-theme), [Ghostty](https://github.com/version14/ghostty-theme), and [Starship](https://github.com/version14/starship-theme) ports.
 
 ## Variants
 
@@ -10,18 +10,30 @@ A [gh-dash](https://github.com/dlvhdr/gh-dash) theme built around the **Version 
 | **Version 14 Black** | `version14-black.yml` |
 | **Version 14 Light** | `version14-light.yml` |
 
-> The violet accent (`text.secondary`, `text.actor`, `border.primary`, `icon.owner`) is currently a **placeholder** hue, standing in for a retired lime-green accent while a permanent replacement is chosen.
+> The violet accent (`text.secondary`, `text.actor`, `border.primary`, `icon.owner`) is a placeholder hue, standing in for a retired lime green accent while a permanent replacement is chosen.
 
 ## Installation
 
-1. Get the variant file you want — download it directly:
+1. Get the variant file you want.
+
+   Download it directly:
    ```sh
    curl -o /tmp/version14-theme.yml \
      https://raw.githubusercontent.com/version14/gh-dash-theme/main/version14.yml
    ```
-   or clone the repo (`git clone https://github.com/version14/gh-dash-theme`) to grab all three.
-2. Replace the `theme:` block in `~/.config/gh-dash/config.yml` with the contents of that file. `gh-dash`'s theme schema covers `text.primary/secondary/inverted/faint/warning/success/actor`, `background.selected`, `border.primary/secondary/faint`, and `icon.newcontributor/contributor/collaborator/member/owner/unknownrole` — every file here fills in all of them.
-3. Run `gh dash` to apply. If `config.yml` has a YAML syntax error (e.g. mismatched indentation after pasting), `gh dash` will fail to start and print a parse error rather than silently ignoring the bad section — that's your signal to check indentation against the variant file.
+
+   Or clone the repo to grab all three:
+   ```sh
+   git clone https://github.com/version14/gh-dash-theme
+   ```
+
+2. Replace the `theme:` block in `~/.config/gh-dash/config.yml` with the contents of that file. `gh-dash`'s theme schema covers `text.primary/secondary/inverted/faint/warning/success/actor`, `background.selected`, `border.primary/secondary/faint`, and `icon.newcontributor/contributor/collaborator/member/owner/unknownrole`. Every file here fills in all of them.
+
+3. Run `gh dash` to apply.
+
+## Verify
+
+If `config.yml` has a YAML syntax error, `gh dash` fails to start and prints a parse error rather than ignoring the bad section. That failure is your signal to check indentation against the variant file.
 
 ## Color Roles
 
@@ -45,13 +57,14 @@ A [gh-dash](https://github.com/dlvhdr/gh-dash) theme built around the **Version 
 | `icon.owner` | `#B7A2FF` | `#B7A2FF` | `#5F3BBB` |
 | `icon.unknownrole` | `#6E737A` | `#6E737A` | `#636870` |
 
-## Also available for Zed, VS Code, Neovim/Vim, Ghostty, and Starship
+## Also available for
 
-- [Zed extension](https://github.com/version14/zed-theme)
-- [VS Code extension](https://github.com/version14/vscode-theme)
-- [Neovim/Vim plugin](https://github.com/version14/nvim-theme)
-- [Ghostty theme](https://github.com/version14/ghostty-theme)
-- [Starship palette](https://github.com/version14/starship-theme)
+- [Zed](https://github.com/version14/zed-theme)
+- [VS Code](https://github.com/version14/vscode-theme)
+- [Neovim/Vim](https://github.com/version14/nvim-theme)
+- [Ghostty](https://github.com/version14/ghostty-theme)
+- [Starship](https://github.com/version14/starship-theme)
+- [Atuin](https://github.com/version14/atuin-theme)
 
 ## License
 
