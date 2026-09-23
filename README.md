@@ -65,6 +65,7 @@ If `config.yml` has a YAML syntax error, `gh dash` fails to start and prints a p
 - [Ghostty](https://github.com/version14/ghostty-theme)
 - [Starship](https://github.com/version14/starship-theme)
 - [Atuin](https://github.com/version14/atuin-theme)
+- [Helix](https://github.com/version14/helix-theme)
 
 ## License
 
